@@ -3,6 +3,7 @@ import queryString from 'query-string';
 import io from "socket.io-client";
 
 import TextContainer from '../Text/Text';
+import InfoBar from '../InfoBar/Info'
 
 import {
   OuterContainer,
@@ -14,6 +15,7 @@ const Chat = () => {
     <OuterContainer>
       
       <Container>
+      <InfoBar />
       <TextContainer />
       </Container>
    
