@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { device } from '../../utils/breakpoints'
 
 export const Container = styled.div`
   display: flex;
@@ -10,13 +11,15 @@ export const Container = styled.div`
 `
 
 export const SubContainer = styled.div`
-  width: 20%;
+  width: 30%;
+  ${device.tablet} {
+    width: 50%;
+  }
 `
 export const Heading = styled.h1`
   color: white;
   font-size: 2.5em;
   padding-bottom: 10px;
-  /* border-bottom: 2px solid white; */
 `
 
 export const Button = styled.button`
