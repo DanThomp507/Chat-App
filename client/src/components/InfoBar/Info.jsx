@@ -7,7 +7,7 @@ import {
   Container,
   LeftInnerContainer,
   RightInnerContainer
-} from './info.styles'
+} from './info.styles';
 
 const InfoBar = ({ room }) => (
   <Container>
@@ -18,7 +18,9 @@ const InfoBar = ({ room }) => (
     </LeftInnerContainer>
 
     <RightInnerContainer>
-      <a href='/'><img src={closeIcon} alt='close icon' /></a>
+      <a href='/'>
+        <img src={closeIcon} alt='close icon' />
+      </a>
     </RightInnerContainer>
 
   </Container>
