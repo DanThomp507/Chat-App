@@ -9,7 +9,25 @@ color: white;
 height: 60%;
 justify-content: space-between;
 
+h1 {
+  margin-bottom: 0px;
+}
+
 ${device.laptop}{
   display: none;
 }
+`
+
+export const ActiveContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 50%;
+
+  img {
+    padding-left: 10px;
+  }
+`
+export const ActiveItem = styled.div`
+  display: flex;
+  align-items: center;
 `
