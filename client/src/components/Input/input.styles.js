@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { device } from '../../utils/breakpoints'
 
 export const Form = styled.form`
     display: flex;
@@ -10,6 +11,10 @@ export const Input = styled.input`
     padding: 5%;
     width: 80%;
     font-size: 1.2em;
+
+    ${device.tablet} {
+        width: 70%;
+    }
 `
 export const SendButton = styled.button`
     color: #fff !important;
@@ -20,4 +25,8 @@ export const SendButton = styled.button`
     display: inline-block;
     border: none;
     width: 20%;
+
+    ${device.tablet}{
+        width: 30%;
+    }
 `
