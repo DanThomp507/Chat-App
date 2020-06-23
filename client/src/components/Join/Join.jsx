@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import {
   Container,
@@ -18,15 +18,28 @@ export default function SignIn() {
 
       <SubContainer>
         <Heading>Join</Heading>
+
         <div>
-          <Input placeholder="Name" className="joinInput" type="text" onChange={(event) => setName(event.target.value)} />
+          <Input
+            placeholder='Name'
+            type='text'
+            onChange={(event) => setName(event.target.value)} />
         </div>
+
         <div>
-          <Input placeholder="Room" className="joinInput mt-20" type="text" onChange={(event) => setRoom(event.target.value)} />
+          <Input
+            placeholder='Room'
+            type='text'
+            onChange={(event) => setRoom(event.target.value)}
+            style={{ marginTop: '20px' }} />
         </div>
+
         <Link onClick={e => (!name || !room) ? e.preventDefault() : null} to={`/chat?name=${name}&room=${room}`}>
-          <Button style={{marginTop: '20px'}} type="submit">Sign In</Button>
+          <Button style={{ marginTop: '20px' }} type='submit'>
+            Sign In
+          </Button>
         </Link>
+
       </SubContainer>
 
     </Container>

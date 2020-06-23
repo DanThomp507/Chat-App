@@ -23,13 +23,17 @@ const Message = ({ message: { text, user }, name }) => {
       <Container>
         <SentText>{trimmed}</SentText>
         <MessageBox style={currentUser ? { background: '#2979FF' } : null}>
-          <MessageText style={currentUser ?  { color: 'white', paddingRight: '10px' } : null}>{ReactEmoji.emojify(text)}</MessageText>
+          <MessageText style={currentUser ? { color: 'white', paddingRight: '10px' } : null}>
+            {ReactEmoji.emojify(text)}
+          </MessageText>
         </MessageBox>
       </Container>
       :
       <Container style={!currentUser ? { justifyContent: 'flex-start' } : null}>
-        <MessageBox style={!currentUser ? { color: 'black'} : null}>
-          <MessageText style={!currentUser ? { color: 'black !important', paddingLeft: '10px' } : null}>{ReactEmoji.emojify(text)}</MessageText>
+        <MessageBox style={!currentUser ? { color: 'black' } : null}>
+          <MessageText style={!currentUser ? { color: 'black !important', paddingLeft: '10px' } : null}>
+            {ReactEmoji.emojify(text)}
+          </MessageText>
         </MessageBox>
         <SentText>{user}</SentText>
       </Container>
