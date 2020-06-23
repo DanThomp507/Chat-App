@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Router>
         <Route path='/' exact component={Join} />
-        {/* <Route path='/chat' component={Chat} /> */}
+        <Route path='/chat' component={Chat} />
       </Router>
     );
   }

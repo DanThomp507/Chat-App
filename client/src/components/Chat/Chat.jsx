@@ -1,0 +1,24 @@
+import React, { useState, useEffect } from "react";
+import queryString from 'query-string';
+import io from "socket.io-client";
+
+import TextContainer from '../Text/Text';
+
+import {
+  OuterContainer,
+  Container
+} from './chat.styles'
+
+const Chat = () => {
+  return (
+    <OuterContainer>
+      
+      <Container>
+      <TextContainer />
+      </Container>
+   
+    </OuterContainer>
+  )
+}
+
+export default Chat

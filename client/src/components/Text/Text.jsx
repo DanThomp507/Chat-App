@@ -24,7 +24,8 @@ const TextContainer = ({ users }) => (
           </div>
         </div>
       )
-      : null
+      : 
+      <p>No users!</p>
     }
   </Container>
 )
