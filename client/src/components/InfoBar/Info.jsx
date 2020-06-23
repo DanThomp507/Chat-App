@@ -13,8 +13,8 @@ const InfoBar = ({ room }) => (
   <Container>
 
     <LeftInnerContainer>
-      <img className='onlineIcon' src={onlineIcon} alt='online icon' />
       <h3>{room}</h3>
+      <img className='onlineIcon' src={onlineIcon} alt='online icon' />
     </LeftInnerContainer>
 
     <RightInnerContainer>

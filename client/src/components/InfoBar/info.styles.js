@@ -16,6 +16,10 @@ export const LeftInnerContainer = styled.div`
     align-items: center;
     margin-left: 5%;
     color: white;
+
+    img {
+      margin-left: 5%;
+    }
 `
 
 export const RightInnerContainer = styled.div`

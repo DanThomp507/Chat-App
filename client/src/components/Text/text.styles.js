@@ -24,7 +24,7 @@ export const ActiveContainer = styled.div`
   margin-bottom: 50%;
 
   img {
-    padding-left: 10px;
+    margin-left: 10px;
   }
 `
 export const ActiveItem = styled.div`
