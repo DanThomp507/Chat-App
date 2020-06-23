@@ -1,9 +1,3 @@
 .App {
   text-align: center;
 }
-
-.messages {
-  padding: 5% 0;
-  overflow: auto;
-  flex: auto;
-}
