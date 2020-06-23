@@ -4,6 +4,7 @@ import io from "socket.io-client";
 
 import TextContainer from '../Text/Text';
 import InfoBar from '../InfoBar/Info'
+import TextInput from '../Input/Input'
 
 import {
   OuterContainer,
@@ -17,6 +18,7 @@ const Chat = () => {
       <Container>
       <InfoBar />
       <TextContainer />
+      <TextInput />
       </Container>
    
     </OuterContainer>
