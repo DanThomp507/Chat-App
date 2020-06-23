@@ -11,7 +11,6 @@ export const MessageBox = styled.div`
   background: #F3F3F3;
   border-radius: 20px;
   padding: 5px 20px;
-  color: white;
   display: inline-block;
   max-width: 80%;
 `
