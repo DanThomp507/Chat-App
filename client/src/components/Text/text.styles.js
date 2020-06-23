@@ -8,4 +8,8 @@ margin-left: 100px;
 color: white;
 height: 60%;
 justify-content: space-between;
+
+${device.laptop}{
+  display: none;
+}
 `
