@@ -26,7 +26,7 @@ const addUser = ({ id, name, room }) => {
 // removing user from chat room
 
 const removeUser = (id) => {
-  const index = user.findIndex((user) => user.id === id)
+  const index = users.findIndex((user) => user.id === id)
 
   if(index !== -1) return users.splice(index, 1)[0]
 }
