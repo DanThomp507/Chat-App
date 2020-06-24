@@ -9,14 +9,17 @@ import {
 const TextInput = ({ setMessage, sendMessage, message }) => (
   <Form>
     <Input
-      className="input"
-      type="text"
-      placeholder="Type a message..."
+      className='input'
+      type='text'
+      placeholder='Type a message'
       value={message}
       onChange={({ target: { value } }) => setMessage(value)}
       onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
     />
-    <SendButton onClick={e => sendMessage(e)}>Send</SendButton>
+
+    <SendButton onClick={e => sendMessage(e)}>
+      Send
+    </SendButton>
   </Form>
 )
 
