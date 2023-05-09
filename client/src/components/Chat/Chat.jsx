@@ -22,7 +22,7 @@ const Chat = ({ location }) => {
   const [message, setMessage] = useState('')
   const [messages, setMessages] = useState([])
 
-  const ENDPOINT = '127.0.0.1:5000'
+  const ENDPOINT = '127.0.0.1:8000'
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search)
